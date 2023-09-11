@@ -1,0 +1,50 @@
+/* style.css */
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+/* Input and button styling */
+input[type="text"] {
+    padding: 10px;
+    align-items: center;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result styling */
+#predictionResult {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
