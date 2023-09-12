@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NBA Stats Prediction</title>
+</head>
+<body>
+    <h1>NBA Stats Prediction</h1>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        .centered-grid-container {
+          display: grid;
+          place-items: center;
+          height: 100vh; /* This will make the container take the full viewport height */
+        }
+      
+        .prediction-list {
+          list-style-type: none;
+          padding: 0;
+        }
+      
+        .prediction-item {
+          display: grid;
+          grid-template-columns: auto auto;
+          gap: 10px;
+          padding: 5px;
+          background-color: #f0f0f0;
+          border-radius: 5px;
+        }
+      
+        .prediction-key {
+          font-weight: bold;
+        }
+      </style>
+    <div class="centered-grid-container">
+        <h2>Prediction:</h2>
+        <ul class="prediction-list">
+          <% for (const key in predictionResult) { %>
+            <li class="prediction-item">
+              <span class="prediction-key"><strong><%= key %>:</strong></span>
+              <span class="prediction-value"><%= predictionResult[key] %></span>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+</body>
+</html>

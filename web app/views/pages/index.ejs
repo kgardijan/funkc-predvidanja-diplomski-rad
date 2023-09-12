@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NBA Stats Prediction</title>
+</head>
+<body>
+    <h1>NBA Stats Prediction</h1>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #prediction-result {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+    <form action="/predict" method="post">
+        
+        <label for="Age">Age: </label>
+        <input type="text" id="Age" name="Age" required><br><br>
+
+        <label for="G">G: </label>
+        <input type="text" id="G" name="G" required><br><br>
+
+        <label for="GS">GS: </label>
+        <input type="text" id="GS" name="GS" required><br><br>
+
+        <label for="MP">MP: </label>
+        <input type="text" id="MP" name="MP" required><br><br>
+
+        <label for="FG">FG: </label>
+        <input type="text" id="FG" name="FG" required><br><br>
+
+        <label for="FGA">FGA: </label>
+        <input type="text" id="FGA" name="FGA" required><br><br>
+
+        <label for="FG%">FG%: </label>
+        <input  type="text" id="FG%" name="FG%" required><br><br>
+
+        <label for="3P">3P: </label>
+        <input type="text" id="3P" name="3P" required><br><br>
+
+        <label for="3PA">3PA: </label>
+        <input type="text" id="3PA" name="3PA" required><br><br>
+
+        <label for="3P%">3P%: </label>
+        <input type="text" id="3P%" name="3P%" required><br><br>
+
+        <label for="2P">2P: </label>
+        <input type="text" id="2P" name="2P" required><br><br>
+
+        <label for="2PA">2PA: </label>
+        <input type="text" id="2PA" name="2PA" required><br><br>
+
+        <label for="2P%">2P%: </label>
+        <input type="text" id="2P%" name="2P%" required><br><br>
+
+        <label for="eFG%">eFG%: </label>
+        <input type="text" id="eFG%" name="eFG%" required><br><br>
+
+        <label for="FT">FT: </label>
+        <input type="text" id="FT" name="FT" required><br><br>
+
+        <label for="FTA">FTA: </label>
+        <input type="text" id="FTA" name="FTA" required><br><br>
+
+        <label for="FT%">FT%: </label>
+        <input type="text" id="FT%" name="FT%" required><br><br>
+
+        <label for="ORB">ORB: </label>
+        <input type="text" id="ORB" name="ORB" required><br><br>
+
+        <label for="DRB">DRB: </label>
+        <input type="text" id="DRB" name="DRB" required><br><br>
+
+        <label for="TRB">TRB: </label>
+        <input type="text" id="TRB" name="TRB" required><br><br>
+
+        <label for="AST">AST: </label>
+        <input type="text" id="AST" name="AST" required><br><br>
+
+        <label for="STL">STL: </label>
+        <input type="text" id="STL" name="STL" required><br><br>
+
+        <label for="BLK">BLK: </label>
+        <input type="text" id="BLK" name="BLK" required><br><br>
+
+        <label for="TOV">TOV: </label>
+        <input type="text" id="TOV" name="TOV" required><br><br>
+
+        <label for="PF">PF: </label>
+        <input type="text" id="PF" name="PF" required><br><br>
+
+        <label for="PTS">PTS: </label>
+        <input type="text" id="PTS" name="PTS" required><br><br>
+
+        <input type="submit" value="OK">
+    </form>
+</body>
+</html>
